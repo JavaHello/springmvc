@@ -12,8 +12,6 @@
     <title>Title</title>
 </head>
 <body>
-<c:forEach items="${spittleList}" var="item">
-    ${item.message} &nbsp; ${item.time}<br>
-</c:forEach>
+RegisterFrom
 </body>
 </html>

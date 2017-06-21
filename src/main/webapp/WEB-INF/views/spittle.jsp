@@ -12,6 +12,7 @@
     <title>Title</title>
 </head>
 <body>
+Spittle
 <c:forEach items="${spittleList}" var="item">
     ${item.message} &nbsp; ${item.time}<br>
 </c:forEach>

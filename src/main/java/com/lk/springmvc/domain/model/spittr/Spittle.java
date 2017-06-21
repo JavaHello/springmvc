@@ -1,4 +1,4 @@
-package com.lk.springmvc.domain.spittr;
+package com.lk.springmvc.domain.model.spittr;
 
 import java.util.Date;
 
@@ -16,8 +16,15 @@ public class Spittle {
     }
 
     public Spittle(String message, Date time) {
+        this(null, message, time, null, null);
+    }
+
+    public Spittle(Integer id, String message, Date time, Double latitude, Double longitude) {
+        this.id = id;
         this.message = message;
         this.time = time;
+        this.latitude = latitude;
+        this.longitude = longitude;
     }
 
     public Integer getId() {

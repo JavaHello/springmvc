@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: luokai
@@ -11,6 +12,9 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Hello World!</h1>
+SpittleList
+<c:forEach items="${spittleList}" var="item">
+    ${item.message} &nbsp; ${item.time}<br>
+</c:forEach>
 </body>
 </html>
